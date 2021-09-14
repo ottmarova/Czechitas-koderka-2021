@@ -8,6 +8,26 @@ body {
   line-height: 1.8em;
 }
 
+.navbar {
+  width: 100%;
+  background-color: rgba(211, 208, 208, 0.507);
+  overflow: auto;
+  border-radius: 5pt;
+}
+
+.navbar a {
+  float: inline-end;
+  text-align: center;
+  padding: 50px;
+  color: rgb(63, 63, 63);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: rgba(185, 185, 185, 0.411);
+}
+
 article {
   padding:0 1em;
 }
@@ -37,7 +57,7 @@ header section {
 header img {
   border-radius: 100%;
   max-width: 200px;
-  max-height: 200px;
+  padding-top: 20pt;
 }
 
 h1 {
@@ -47,12 +67,12 @@ h1 {
 
 h3 {
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 h3, h4 {
   font-weight: bold;
 }
-
 
 main {
   max-width: 1140px;
@@ -83,6 +103,7 @@ main section:not(:last-child) {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+
 .skills .column {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -93,7 +114,6 @@ main section:not(:last-child) {
   list-style-type: none;
 }
 
-
 .school, .job-title {
   text-transform: capitalize;
 }
@@ -102,15 +122,14 @@ main section:not(:last-child) {
   color: #889499;
 }
 
-
 footer {
  padding: 2em;
- background: #e6e6e6;
+ background: #f1efec;
  color: rgb(48, 48, 48);
- text-align: right;
+ text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
   .course {
     display: block;
   }
@@ -120,7 +139,13 @@ footer {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 700px) {
+  .navbar a {
+    float: none;
+    display: block;
+    padding: 20px;
+  }
+  
   .skills {
     display: block;
   }
